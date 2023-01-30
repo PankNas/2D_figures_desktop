@@ -11,4 +11,5 @@
 ## Реализация
 Приложение написано при помощи Java. Для БД используется MongoDB.
 ## Инструкция к запуску
-Запустить на выполнение в IDE файл <blockquote>..\server\src\main\java\panknas\shapes\Sem5Application.java</blockquote>
+1. Клонировать проект на локальный компьютер и настроить maven для папок gui и model 
+2. Запустить на выполнение в IDE файл <blockquote>..\server\src\main\java\panknas\shapes\Sem5Application.java</blockquote>
