@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.AddFigureController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="61.0" prefWidth="600.0">
+         <children>
+            <ComboBox fx:id="comboBox" onAction="#selectFigure" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#onAddBtnClick" text="Добавить">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonCancell" mnemonicParsing="false" onAction="#onCancellBtnClick" text="Отмена">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <HBox fx:id="areaAmountPoints" prefHeight="46.0" prefWidth="149.0" style="visibility: false;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Кол.-во точек:">
+                     <HBox.margin>
+                        <Insets right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Spinner fx:id="spinnerPoints" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </HBox>
+      <ScrollPane hbarPolicy="NEVER">
+         <content>
+            <VBox fx:id="panePoints" prefHeight="262.0" prefWidth="492.0" />
+         </content>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ScrollPane>
+   </children>
+</VBox>

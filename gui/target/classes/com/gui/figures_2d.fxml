@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="454.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.MainController">
+   <children>
+      <Canvas fx:id="canvas" height="460.0" width="477.0" />
+      <VBox alignment="CENTER_LEFT" prefHeight="460.0" prefWidth="205.0">
+          <Button onAction="#onAddButtonClick" text="Добавить фигуры">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin></Button>
+         <Button mnemonicParsing="false" onAction="#onSaveDB" text="Сохранить в БД">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#onLoadDB" text="Загрузить из БД">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onSaveButtonClick" text="Сохранить файл">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onLoadButtonClick" text="Загрузить файл">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onSaveImageButtonClick" text="Сохранить изображение">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onMoveButtonClick" text="Переместить фигуру">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onDeleteButtonClick" text="Удалить фигуру">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onClearButtonClick" text="Очистить">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onSquareButtonClick" text="Площадь фигуры">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onLengthButtonClick" text="Периметр фигуры">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Button onAction="#onCrossButtonClick" text="Пересечение фигур">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Button>
+         <Text fx:id="nameOperation" strokeType="OUTSIDE" strokeWidth="0.0">
+            <VBox.margin>
+               <Insets bottom="5.0" />
+            </VBox.margin>
+         </Text>
+          <Label fx:id="result" />
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>
