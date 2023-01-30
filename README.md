@@ -11,5 +11,10 @@
 ## Реализация
 Приложение написано при помощи Java. Для БД используется MongoDB.
 ## Инструкция к запуску
-1. Клонировать проект на локальный компьютер и настроить maven для папок gui и model 
-2. Запустить на выполнение в IDE файл <blockquote>..\server\src\main\java\panknas\shapes\Sem5Application.java</blockquote>
+Замечание: действия по запуску акутальны для IntelliJ IDEA, для других IDE возможны отличия.
+1. Клонировать проект на локальный компьютер и настроить maven для папок gui и model
+2. Подключить библиотеку с фигурами model-1.0-SNAPSHOT<br>
+2.1 В IDE перейти в <blockquote>File/Project Structure/Libraries<br></blockquote>
+2.2 Нажать на значок плюса и выбрать Java<br>
+2.3 Выбрать <blockquote>model\target\model-1.0-SNAPSHOT<br></blockquote>
+3. Запустить на выполнение в IDE файл <blockquote>..\gui\src\main\java\com\gui\HelloApplication.java</blockquote>
